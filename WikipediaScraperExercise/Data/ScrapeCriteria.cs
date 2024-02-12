@@ -1,6 +1,18 @@
-﻿namespace WikipediaScraperExercise.Data;
+﻿using System.Text.RegularExpressions;
+using System.Collections.Generic;
 
-public class ScrapeCriteria
+namespace WikipediaScraperExercise.Data
 {
-    
+    class ScrapeCriteria
+    {
+        public ScrapeCriteria()
+        {
+        }
+
+        public string Data { get; set; }
+        public string Regex { get; set; }
+        public RegexOptions RegexOptions { get; set; }
+
+        public List<ScrapeCriteriaParts> Parts { get; set; }
+    }
 }
