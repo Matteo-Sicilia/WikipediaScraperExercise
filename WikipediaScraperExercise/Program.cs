@@ -10,6 +10,7 @@ class Program
         {
             string googleMainPage = client.DownloadString("https://www.google.com");
             Console.WriteLine(googleMainPage);
+            Console.Read();
         }
     }
 }
