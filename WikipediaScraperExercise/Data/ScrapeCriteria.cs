@@ -7,10 +7,11 @@ namespace WikipediaScraperExercise.Data
     {
         public ScrapeCriteria()
         {
+            Parts = new List<ScrapeCriteriaParts>();
         }
 
-        public string Data { get; set; }
-        public string Regex { get; set; }
+        public string? Data { get; set; }
+        public string? Regex { get; set; }
         public RegexOptions RegexOptions { get; set; }
 
         public List<ScrapeCriteriaParts> Parts { get; set; }
